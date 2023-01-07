@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Testing Flipcart]">
+  <test thread-count="5" name="Regression(failed)">
+    <parameter name="from" value="Akot"/>
+    <parameter name="to" value="Pune"/>
+    <classes>
+      <class name="flipkart.testcases.Loginpage_text">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="Verify_Login_title"/>
+        </methods>
+      </class> <!-- flipkart.testcases.Loginpage_text -->
+      <class name="flipkart.testcases.Homepagetext">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="Verify_Become_Test"/>
+        </methods>
+      </class> <!-- flipkart.testcases.Homepagetext -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [Testing Flipcart] -->
